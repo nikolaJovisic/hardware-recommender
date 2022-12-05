@@ -1,0 +1,262 @@
+@prefix : <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3> .
+
+<http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#componentName
+:componentName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Component ;
+               rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf :SoftwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#BlueToothDriver
+:BlueToothDriver rdf:type owl:Class ;
+                 rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU
+:CPU rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Component
+:Component rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DockingStation
+:DockingStation rdf:type owl:Class ;
+                rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Driver
+:Driver rdf:type owl:Class ;
+        rdfs:subClassOf :SoftwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Earphones
+:Earphones rdf:type owl:Class ;
+           rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ElectricalSupply
+:ElectricalSupply rdf:type owl:Class ;
+                  rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ExternalComponent
+:ExternalComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :HardwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard
+:GraphicsCard rdf:type owl:Class ;
+              rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD
+:HDD rdf:type owl:Class ;
+     rdfs:subClassOf :PersistentMemory .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDDDriver
+:HDDDriver rdf:type owl:Class ;
+           rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HardwareComponent
+:HardwareComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :Component .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Headphones
+:Headphones rdf:type owl:Class ;
+            rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#InternalComponent
+:InternalComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :HardwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#KeyboardDriver
+:KeyboardDriver rdf:type owl:Class ;
+                rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS
+:LinuxOS rdf:type owl:Class ;
+         rdfs:subClassOf :OperatingSystem .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MacOS
+:MacOS rdf:type owl:Class ;
+       rdfs:subClassOf :OperatingSystem .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Memory
+:Memory rdf:type owl:Class ;
+        rdfs:subClassOf :HardwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard
+:Motherboard rdf:type owl:Class ;
+             rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MouseDriver
+:MouseDriver rdf:type owl:Class ;
+             rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#NetworkDriver
+:NetworkDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#OperatingMemory
+:OperatingMemory rdf:type owl:Class ;
+                 rdfs:subClassOf :InternalComponent ,
+                                 :Memory .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:subClassOf :SoftwareComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PersistentMemory
+:PersistentMemory rdf:type owl:Class ;
+                  rdfs:subClassOf :ExternalComponent ,
+                                  :InternalComponent ,
+                                  :Memory .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver
+:PrinterDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Projector
+:Projector rdf:type owl:Class ;
+           rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM
+:RAM rdf:type owl:Class ;
+     rdfs:subClassOf :OperatingMemory .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD
+:SSD rdf:type owl:Class ;
+     rdfs:subClassOf :PersistentMemory .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSDDRIver
+:SSDDRIver rdf:type owl:Class ;
+           rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner
+:Scanner rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver
+:ScannerDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SoftwareComponent
+:SoftwareComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :Component .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SoundDriver
+:SoundDriver rdf:type owl:Class ;
+             rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers
+:Speakers rdf:type owl:Class ;
+          rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#TVCardDriver
+:TVCardDriver rdf:type owl:Class ;
+              rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver
+:VideoDriver rdf:type owl:Class ;
+             rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame
+:VideoGame rdf:type owl:Class ;
+           rdfs:subClassOf :Application .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer
+:VideoPlayer rdf:type owl:Class ;
+             rdfs:subClassOf :Application .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WebBrowser
+:WebBrowser rdf:type owl:Class ;
+            rdfs:subClassOf :Application .
+
+
+###  http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS
+:WindowsOS rdf:type owl:Class ;
+           rdfs:subClassOf :OperatingSystem .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

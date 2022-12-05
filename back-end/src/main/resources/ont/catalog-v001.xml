@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3" uri="classesAndProperties.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3" uri="classesAndProperties.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

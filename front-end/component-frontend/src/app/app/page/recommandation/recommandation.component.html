@@ -1,0 +1,74 @@
+<div class="flex flex-col w-80">
+    <div class="flex flex-row mt-5">
+        <select [(ngModel)]="selectedComponents.selectedMotherboard" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select motherboard</option>
+        <option *ngFor="let item of motherboards" [value]="item">
+            {{item}}
+        </option>
+        </select>
+    </div>
+    <div class="flex flex-row mt-5">
+        <select [(ngModel)]="selectedComponents.selectedCpu" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select cpu</option>
+        <option *ngFor="let item of cpus" [value]="item">
+                {{item}}
+        </option>
+        </select>
+    </div>
+    <div class="flex flex-row mt-5">
+        <select [(ngModel)]="selectedComponents.selectedGpu" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select gpu</option>
+        <option *ngFor="let item of gpus" [value]="item">
+                {{item}}
+        </option>
+        </select>
+    </div>
+    <div class="flex flex-row mt-5">
+        <select [(ngModel)]="selectedComponents.selectedRam" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select ram</option>
+        <option *ngFor="let item of ram" [value]="item">
+            {{item}}
+        </option>
+        </select>
+    </div>
+    <div class="flex flex-row mt-5">
+        <select [(ngModel)]="selectedComponents.selectedStorage" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select storage</option>
+        <option *ngFor="let item of storage" [value]="item">
+            {{item}}
+        </option>
+        </select>
+    </div>
+
+    <div class="flex flex-col mt-5">
+        <label class="text-blue-700">What to upgrade?</label>
+        <select [(ngModel)]="selectedComponents.selectedComponent" id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Select component</option>
+        <option *ngFor="let item of components" [value]="item">
+            {{item}}
+        </option>
+        </select>
+    </div>
+
+    <button (click)="getResults()" class="rounded mt-5 h-8 bg-blue-700 text-white">
+        Upgrade
+    </button>
+
+    <!---->
+    <div *ngIf="displayResults">
+        <label class="text-blue-700 mt-8">Results</label>
+        <table class="border-separate border-spacing-1 border w-80 border-slate-400 ...">
+            <thead>
+            <tr>
+                <th class="border border-slate-300 ...">Component name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let item of results">
+                <td class="border border-slate-300 ...">{{item}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!---->
+</div>
