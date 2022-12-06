@@ -5,7 +5,23 @@ from sklearn.model_selection import train_test_split
 
 COMPONENTS = {0: "motherboards", 1: "processors", 2: "ram"}
 
-def load():
+def load_configurations():
+    names = []
+    x = []
+
+    with open(f"../scraper/data/combined_configurations.txt") as file:
+        for line in file:
+            encoded = list(line[:30].encode())
+            if len(encoded) < 30:
+                continue
+            encoded = np.array(encoded[:30])
+            names.append(line[:30])
+            x.append(encoded)
+    x = np.array(x)
+
+    return names, x
+
+def load_components():
     names = []
     categories = []
     x = []
@@ -27,7 +43,7 @@ def load():
     y = utils.to_categorical(y)
     return names, categories, x, y
 
-def print_predictions(predictions, y_test, test_names, test_categories):
+def print_predictions_test(predictions, y_test, test_names, test_categories):
     for prediction, label, name, category in zip(
         predictions, y_test, test_names, test_categories
     ):
@@ -40,6 +56,17 @@ def print_predictions(predictions, y_test, test_names, test_categories):
             category,
         )
 
+def print_predictions_configurations(predictions, test_names):
+    for prediction, name in zip(
+        predictions, test_names
+    ):
+        print(
+            tuple(COMPONENTS.values()),
+            "->",
+            tuple(map(lambda p: round(p, 2), prediction)),
+            name,
+        )
+
 def make_model():
     model = tf.keras.Sequential(
         [
@@ -50,11 +77,11 @@ def make_model():
             tf.keras.layers.Dense(3, activation="softmax"),
         ]
     )
-    model.compile(optimizer="adam", loss="mean_squared_error", metrics=["accuracy"])
+    model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
     return model
 
 def prepare_data():
-    names, categories, x, y = load()
+    names, categories, x, y = load_components()
 
     data = list(zip(x, names, categories))
 
@@ -78,11 +105,15 @@ def main():
     model = make_model()
     model.fit(x_train, y_train, epochs=300, validation_split=0.33)
     predictions = model.predict(x_test)
-    print_predictions(predictions, y_test, test_names, test_categories)
+    print_predictions_test(predictions, y_test, test_names, test_categories)
     train_loss, train_acc = model.evaluate(x_train, y_train)
     test_loss, test_acc = model.evaluate(x_test, y_test)
     print("Classification accuracy on training set: ", train_acc)
     print("Classification accuracy on test set: ", test_acc)
+
+    names_configurations, x_configurations = load_configurations()
+    predictions = model.predict(x_configurations)
+    print_predictions_configurations(predictions, names_configurations)
 
 if __name__ == '__main__':
     main()
