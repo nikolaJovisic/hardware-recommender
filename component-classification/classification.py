@@ -1,4 +1,5 @@
 import csv
+import re
 from typing import Dict, List, Tuple
 
 import numpy as np
@@ -6,6 +7,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 import pandas as pd
+from sklearn import preprocessing
 from fuzzywuzzy import fuzz
 import jellyfish
 import difflib
@@ -16,10 +18,11 @@ def print_histogram(components: str) -> Dict[str, int]:
         reader = csv.reader(file, delimiter='\t', lineterminator='\n')
         dataset = [line[0] for line in reader]
 
-    dataset = ' '.join(dataset).translate({ord(i): ' ' for i in ',()/&'}).lower().split()
+    dataset = ' '.join(dataset).translate({ord(i): ' ' for i in ',()/&|@\'\"'}).lower().split()
     # dataset = ' '.join(dataset).lower().split()
 
-    dataset = [data for data in dataset if data not in ['-', 'up', 'for', 'to', 'pc', 'desktop', 'desk', 'top', 'computer', 'with', 'gaming', 'and']]
+    dataset = [data for data in dataset if data not in ['-', 'up', 'for', 'to', 'pc', 'desktop', 'desk', 'top',
+                                                        'computer', 'with', 'gaming', 'and', 'mini', 'laptop', 'renewed']]
 
     counts = dict(Counter(dataset).most_common(20))
 
@@ -29,6 +32,9 @@ def print_histogram(components: str) -> Dict[str, int]:
 
     labels = np.array(labels)[ind_sort]
     values = np.array(values)[ind_sort]
+
+    # values = preprocessing.normalize([values])
+    # values = values[0]
 
     indexes = np.arange(len(labels))
 
@@ -43,17 +49,16 @@ def print_histogram(components: str) -> Dict[str, int]:
 
 
 def check_configurations(cpus: Dict[str, int], ram: Dict[str, int], motherboards: Dict[str, int]) -> None:
-    with open(f"../scraper/data/combined_configurations.txt", mode='r', encoding="utf-8") as file:
+    with open(f"../scraper/data/computers.txt", mode='r', encoding="utf-8") as file:
         reader = csv.reader(file, delimiter='\t', lineterminator='\n')
         dataset = [line[0] for line in reader]
 
-    dataset = [s.translate({ord(i): ' ' for i in ',()/&'}).lower() for s in dataset]
+    dataset = [s.translate({ord(i): ' ' for i in ',()/&|@\'\"'}).lower() for s in dataset]
 
     dataset_modified = []
     for data in dataset:
-        dataset_modified.append(' '.join([d for d in data.split() if d not in ['-', 'up', 'for', 'to', 'pc', 'desktop', 'desk', 'top', 'computer', 'with', 'gaming', 'and']]))
-
-    # dataset = ['msi performance gaming amd ryzen 2nd and 3rd gen am4 m.2 usb 3 ddr4 dvi hdmi crossfire atx motherboard b450 gaming plus max']
+        dataset_modified.append(' '.join([d for d in data.split() if d not in ['-', 'up', 'for', 'to', 'pc', 'desktop',
+                                'desk', 'top', 'computer', 'with', 'gaming', 'and', 'mini', 'laptop', 'renewed']]))
 
     df = pd.DataFrame(columns=['CPUs', 'RAM', 'Motherboards'])
 
@@ -65,6 +70,7 @@ def check_configurations(cpus: Dict[str, int], ram: Dict[str, int], motherboards
     process_data(dataset_modified, motherboards, 'Motherboards', df)
 
     df.to_csv('data/extracted_components.csv', index=False)
+    df[['CPUs', 'RAM']].to_csv('data/extracted_components_minimized.csv', index=False)
 
 
 def process_data(dataset: List[str], components: Dict[str, int], component_name: str, df: pd.DataFrame) -> None:
@@ -72,11 +78,14 @@ def process_data(dataset: List[str], components: Dict[str, int], component_name:
 
     extracted_strings = []
     for i, config in enumerate(configs):
-        # labels, values = zip(*config.items())
         labels, values = [], []
         for c in config:
             labels.append(c[0])
             values.append(c[1])
+
+        regex = '[0-9]{4,}[A-Za-z]+|i[0-9]-[0-9A-Za-z]+|[A-Za-z][0-9]{4,}|i[0-9]'
+        if component_name == 'CPUs':
+            values = [max(values)/2 if re.search(regex, labels[i]) else v for i, v in enumerate(values)]
 
         values = [v if v >= max(values)/20 else 0 for v in values]
 
@@ -87,16 +96,16 @@ def process_data(dataset: List[str], components: Dict[str, int], component_name:
                                           separated_values, values, labels)
         extracted_strings.append(extracted_string)
 
-        labels = np.array(labels)
-        values = np.array(values)
-
-        indexes = np.arange(len(labels))
-
-        plt.bar(indexes, values)
-
-        plt.xticks(indexes, labels)
-        plt.title(component_name)
-        plt.show()
+        # labels = np.array(labels)
+        # values = np.array(values)
+        #
+        # indexes = np.arange(len(labels))
+        #
+        # plt.bar(indexes, values)
+        #
+        # plt.xticks(indexes, labels)
+        # plt.title(component_name)
+        # plt.show()
 
     df[component_name] = extracted_strings
 
@@ -128,7 +137,7 @@ def get_component_occurrences(dataset: List[str], components: Dict[str, int]) ->
                 config.append((string, 0))
         configs.append(config)
         # if len(configs) > 10:
-        # break
+        #     break
     return configs
 
 
