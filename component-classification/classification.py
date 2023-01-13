@@ -232,14 +232,13 @@ def add_motherboards(dataframe: pd.DataFrame):
         reader = csv.reader(file, delimiter='\t', lineterminator='\n')
         motherboard_dataset = [line[0] for line in reader]
 
-    motherboard_dataset = [motherboard.lower() for motherboard in motherboard_dataset]
+    motherboard_dataset = [s.translate({ord(i): ' ' for i in ',()/&|@\'\"'}).lower() for s in motherboard_dataset]
 
     data = []
     i = 0
     for _, row in dataframe.iterrows():
         i += 1
         print(i)
-        # data.append([row['CPUs'], row['RAM'], ' '.join(motherboard_dataset[i].split()[:4])])
         for motherboard in motherboard_dataset:
             d = []
             cpu_regex = ''
@@ -275,6 +274,7 @@ def add_motherboards(dataframe: pd.DataFrame):
                         data.append(d)
 
     final_dataframe = pd.DataFrame(data=data, columns=['CPU', 'RAM', 'Motherboard'])
+    final_dataframe.drop_duplicates(inplace=True)
     final_dataframe.to_csv('data/extracted_components.csv', index=False)
 
 
