@@ -19,21 +19,10 @@ public class ComponentService {
     }
 
     public List<String> recommendUpgrade(String componentType,String currentComponentName,String motherboard){
-        String property = "memorySize";
-        if(componentType.equals("CPU"))
-            property="threadNumber";
-
-        var betterComponents = getBetterComponents(currentComponentName,property);
-
-        var fixedType = componentType.equals("GraphicsCard") ? "GPU" : componentType;
+     var fixedType = componentType.equals("GraphicsCard") ? "GPU" : componentType;
         var compatibleComponents = getMotherboardCompatibleComponents(fixedType ,motherboard);
 
-        var retVal = new ArrayList<String>();
-        for(var betterComponent: betterComponents)
-            if(compatibleComponents.contains(betterComponent))
-                retVal.add(betterComponent);
-
-        return retVal;
+        return compatibleComponents;
     }
 
     public List<String> getMotherboardCompatibleComponents(String componentName,String motherboard){
