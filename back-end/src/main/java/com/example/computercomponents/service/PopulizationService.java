@@ -12,11 +12,16 @@ import org.apache.jena.riot.RDFDataMgr;
 
 import java.io.*;
 import java.util.Iterator;
+import java.util.Locale;
+import java.util.regex.Pattern;
 
 import com.opencsv.CSVReader;
 
 
 public class PopulizationService {
+    private static String preprocessName(String name) {
+        return name.replaceAll("[^A-Za-z0-9]", "_").toLowerCase(Locale.ROOT);
+    }
     public static void populize(String csvPath) {
         String SOURCE = "C:\\Users\\paracelsus\\Desktop\\vivodyne-diffine\\hardware-recommender\\back-end\\src\\main\\resources\\ont\\classesAndInstances.owl";
         String importNS = "http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#";
@@ -47,11 +52,10 @@ public class PopulizationService {
             String[] nextLine;
             reader.readNext();
             int i = 50;
-            while ((nextLine = reader.readNext()) != null && i > 0) {
-                i--;
-                String cpu_name = baseNS + nextLine[0].replace(' ', '_');
-                String ram_name = baseNS + nextLine[1].replace(' ', '_');
-                String motherboard_name = baseNS + nextLine[2].replace(' ', '_');
+            while ((nextLine = reader.readNext()) != null && i-- > 0) {
+                String cpu_name = baseNS + preprocessName(nextLine[0]);
+                String ram_name = baseNS + preprocessName(nextLine[1]);
+                String motherboard_name = baseNS + preprocessName(nextLine[2]);
 
                 Individual motherboard_individual = model.getIndividual(motherboard_name);
                 if (motherboard_individual == null) {

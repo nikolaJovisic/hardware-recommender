@@ -6,64 +6,57 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 :LOGITECH-M330-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MouseDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MouseDriver> .
 
 :CRUCIAL-SSD-P5-Plus-1TB
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 1000 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
-:SCANNER-WORKFORCE-ES-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
+:supermicro_motherboard_mbd_x11scm_f_b_core
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:Serial-ATA-1000GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:SCANNER-WORKFORCE-ES-driver
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
+
+:Serial-ATA-1000GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 1000 .
 
 :msi_mag_b550_tomahawk
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :amd_6-core_ryzen_5_5500u
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
                 :gigabyte_x570_ud_amd , :msi_mag_b550m_mortar , :msi_mag_b550_tomahawk , :inland_performance_1tb_nvme , :inland_prime_1tb_tlc , :inland_qn322_500gb_gen3 , :msi_b550_gaming_gen3 , :gigabyte_x570_aorus_xtreme , :msi_pro_b550m-p_gen3 , :msi_meg_b550_unify-x , :msi_mpg_b550_gaming , :asus_tuf_gaming_b450-plus , :asus_prime_b450m-a_ii , :msi_meg_b550_unify , :gigabyte_b550_aorus_elite .
 
-:inland_performance_1tb_nvme
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:WINDOWS95  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
-
-:CORSAIR-SSD-240GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+:CORSAIR-SSD-240GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 240 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
-:LINUX-MINT  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:inland_performance_1tb_nvme
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:i5-8400  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
-                "2.8"^^xsd:double ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
-                8 ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
-                6 .
+:WINDOWS95  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
-:GTX-730  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:LINUX-MINT  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
+
+:GTX-730  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.072"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 384 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -71,21 +64,31 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 4 .
 
-:Ryzen7-3700X  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Ryzen7-3700X  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.6"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 32 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 16 .
 
-:GTX-1080  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:i5-8400  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
+                "2.8"^^xsd:double ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
+                8 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
+                6 .
+
+:GTX-1080  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.607"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 2560 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -94,77 +97,77 @@
                 8 .
 
 :PRINTER-CANON-MG2550S
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
-:WINDOWS11  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:WINDOWS11  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
 :amd_ryzen_3_2200g_amd
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :asus_tuf_b450-pro_gaming , :gigabyte_x570_aorus_master , :gigabyte_x570_gaming_x , :gigabyte_x570_aorus_elite .
+                :asus_tuf_b450_pro_gaming , :gigabyte_x570_aorus_elite , :gigabyte_x570_gaming_x , :gigabyte_x570_aorus_master , :asus_tuf_b450-pro_gaming .
 
-:ASUS-TUF-Z590-PLUS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+:ASUS-TUF-Z590-PLUS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:GTA2   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:GTA2   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:FSP-HYDRO-PTM-650W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:FSP-HYDRO-PTM-650W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 650 .
 
-:PRINTER-EPSON-L805  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-EPSON-L805  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
 :WINDOWS-MEDIA-PLAYER
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> .
 
-:MWE_GOLD_1050  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:MWE_GOLD_1050  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 1050 .
 
-:TRUST-GXT-629  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
+:TRUST-GXT-629  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
 
 :LOGITECH-MX-ANYWHERE
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
 
-:FST-CMT340-Plus  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:FST-CMT340-Plus  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 340 .
 
-:FSP-CST350-Plus  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:FSP-CST350-Plus  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 350 .
 
 :msi_pro_b550m-p_gen3
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :gigabyte_x570_gaming_x
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:WINDOWS-ME  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:WINDOWS-ME  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
-:VLC-PLAYER  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> , owl:NamedIndividual .
+:VLC-PLAYER  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> .
 
 :COOLER-MASTER-MASTERAIR-MA610P
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Air" .
 
-:WINDOWS8  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:WINDOWS8  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
-:GTX-1080Ti  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GTX-1080Ti  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.48"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS ;
+                :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 3584 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -176,10 +179,18 @@
         rdf:type            owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleWithMotherboard> .
 
-:JBL-QUANTUM-DUO  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
+:JBL-QUANTUM-DUO  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
+
+:biostar_motherboard_tb250_btc_core
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
 :x99_lga2011-3_ddr4_computer
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:NEED-FOR-SPEED-CARBON
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
+
+:GTA-SAN-ANDREAS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :nvida-GeForce-RTX-2060
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
@@ -194,84 +205,79 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 6 .
 
-:i9-9900K  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:ARCH-LINUX  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
+
+:i9-9900K  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.6"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 16 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 16 .
 
 :SCANNER-WORKFORCE-DS410-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
-
-:NEED-FOR-SPEED-CARBON
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
-:ARCH-LINUX  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
-
-:GTA-SAN-ANDREAS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
 
 :ASUS-PRIME-Z690M-PLUS
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
 :SCANNER-XL-626A-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
 
-:i7-11700KF  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i7-11700KF  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.6"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 16 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 16 .
 
-:PRINTER-PIXMAG640  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-PIXMAG640  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
-:LOGITECH-K270  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> , owl:NamedIndividual .
+:LOGITECH-K270  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> .
 
 :SCANNER-LIDE300-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
 
 :intel_core_i5-7500t  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
                 :biostar_motherboard_tb250-btc_pro , :tb360-btc_pro_2.0_core , :yuhean_motherboard_lga_1151 , :supermicro_motherboard_mbd-x11scv-q-o_core , :x99_lga2011-3_ddr4_computer , :machinist_x99_computer_motherboards , :biostar_motherboard_tb250-btc_core , :supermicro_motherboard_mbd-x11scm-f-b_core , :biostar_tb360-btc_pro_core , :biostar_198118_motherboard_tb250-btc , :machinist_x99_dual_cpu .
 
-:i3-6100  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:WINDOWS-XP  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
+
+:i3-6100  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.7"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 3 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 4 .
 
-:WINDOWS-XP  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
-
-:16gb_ddr5  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
+:16gb_ddr5  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :inland_qn322_500gb_gen3 , :inland_qn322_2tb_gen3 , :inland_qn322_1tb_gen3 .
+                :inland_qn322_1tb_gen3 , :inland_qn322_2tb_gen3 , :inland_qn322_500gb_gen3 .
 
-:WINDOWS98  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:WINDOWS98  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
 <http://www.semanticweb.org/pc/ontologies/2022/4/untitled-ontology-17>
         rdf:type     owl:Ontology ;
         owl:imports  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3> .
 
-:CALL-OF-DUTY3  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:CALL-OF-DUTY3  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:WINDOWS-VISTA  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:WINDOWS-VISTA  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
-:GeForce-GTX-1660  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GeForce-GTX-1660  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.785"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS ;
+                :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 1536 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -279,196 +285,200 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 6 .
 
+:SCANNER-LIDE300  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
+
 :msi_meg_b550_unify-x
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:SCANNER-LIDE300  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
-
-:LOGITECH-MASTER  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
+:LOGITECH-MASTER  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
 
 :machinist_x99_computer_motherboards
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:GTA5   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:GTA5   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:TOSHIBA-P300-1TB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:TOSHIBA-P300-1TB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 1000 .
 
-:DELL-P2722H  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:DELL-P2722H  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 27 .
 
 :ASUS-PRIME-B560-PLUS
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:DELL-S2721HS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:DELL-S2721HS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 27 .
 
 :LOGITECH-K-220-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#KeyboardDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#KeyboardDriver> .
 
-:Ryzen9-5950X  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Ryzen9-5950X  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.7"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 64 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 24 .
 
 :PRINTER-EPSON-L805-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> .
 
-:COOLER-MASTER-C1  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+:COOLER-MASTER-C1  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Air" .
 
 :COOLER-MASTER-MASTERAIR-G100M
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Air" .
 
-:LOGITECH-MX-MASTER-3
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
-
-:gigabyte_x570_aorus_master
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:i7-4790K  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
-                "4.4"^^xsd:double ;
+:intel_core_i5_6500  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
-                8 ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
-                8 .
+                :machinist_x99_dual_cpu , :biostar_motherboard_tb250_btc_core , :x99_lga2011_3_ddr4_computer , :yuhean_motherboard_lga_1151 , :machinist_x99_computer_motherboards , :supermicro_motherboard_mbd_x11scv_q_o_core , :biostar_198118_motherboard_tb250_btc , :tb360_btc_pro_2_0_core , :biostar_tb360_btc_pro_core , :supermicro_motherboard_mbd_x11scm_f_b_core , :biostar_motherboard_tb250_btc_pro .
 
-:DELL-P3223DE  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:LOGITECH-MX-MASTER-3
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
+
+:DELL-P3223DE  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 32 .
 
-:FSP-CMT-520-Plus  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
-                520 .
+:gigabyte_x570_aorus_master
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:UBUNTU  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
-
-:GTA-VICE-CITY  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
-:ASSASSINS-CREED-BROTHERHOOD
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
-:TOSHIBA-X300-8TB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
-                8000 .
-
-:SAMSON-MediaOneBT4  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
-
-:16gb_ddr4_ram  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :biostar_motherboard_tb250-btc_pro , :biostar_tb360-btc_pro_core , :biostar_motherboard_tb250-btc_core , :supermicro_motherboard_mbd-x11scv-q-o_core , :supermicro_motherboard_mbd-x11scm-f-b_core , :x99_lga2011-3_ddr4_computer , :machinist_x99_computer_motherboards , :yuhean_motherboard_lga_1151 , :tb360-btc_pro_2.0_core , :machinist_x99_dual_cpu , :biostar_198118_motherboard_tb250-btc .
-
-:i7-4790  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i7-4790K  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
-                "4.0"^^xsd:double ;
+                "4.4"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 8 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 8 .
 
-:i7-9700  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:FSP-CMT-520-Plus  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
+                520 .
+
+:UBUNTU  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
+
+:GTA-VICE-CITY  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
+
+:ASSASSINS-CREED-BROTHERHOOD
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
+
+:SAMSON-MediaOneBT4  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
+
+:TOSHIBA-X300-8TB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
+                8000 .
+
+:i7-4790  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
+                "4.0"^^xsd:double ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
+                8 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
+                8 .
+
+:16gb_ddr4_ram  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
+                :tb360_btc_pro_2_0_core , :biostar_motherboard_tb250-btc_pro , :biostar_tb360-btc_pro_core , :biostar_motherboard_tb250_btc_pro , :biostar_motherboard_tb250-btc_core , :supermicro_motherboard_mbd-x11scv-q-o_core , :supermicro_motherboard_mbd-x11scm-f-b_core , :biostar_tb360_btc_pro_core , :x99_lga2011-3_ddr4_computer , :supermicro_motherboard_mbd_x11scv_q_o_core , :x99_lga2011_3_ddr4_computer , :supermicro_motherboard_mbd_x11scm_f_b_core , :biostar_198118_motherboard_tb250_btc , :biostar_motherboard_tb250_btc_core , :machinist_x99_computer_motherboards , :yuhean_motherboard_lga_1151 , :tb360-btc_pro_2.0_core , :machinist_x99_dual_cpu , :biostar_198118_motherboard_tb250-btc .
+
+:i7-9700  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.0"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 12 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 8 .
 
-:Serial-ATA-3-1000GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:GTX-1060-driver  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> .
+
+:Serial-ATA-3-1000GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS ;
+                :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 1000 .
 
-:GTX-1060-driver  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> , owl:NamedIndividual .
-
-:NJOY-Dawn-550  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:NJOY-Dawn-550  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 550 .
 
-:PRINTER-XEROXB230  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-XEROXB230  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
-:FSP-Hydro-550W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:FSP-Hydro-550W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 550 .
 
-:Ryzen5-5600G  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Ryzen5-5600G  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.9"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 16 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 12 .
 
-:Kingston-DDR5-16GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Kingston-DDR5-16GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 5 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 16 .
 
-:DELL-S2721HGF  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:DELL-S2721HGF  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 27 .
 
-:msi_meg_b550_unify  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:msi_meg_b550_unify  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :biostar_motherboard_tb250-btc_pro
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:SAMSUNG-2TB-SSD-970  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+:SAMSUNG-2TB-SSD-970  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 2000 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
 :ASSASSINS-CREED-ORIGIN
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :Dual-Radeon-RX-6500  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
@@ -482,46 +492,46 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 4 .
 
-:WD-Green-SSD-240GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+:WD-Green-SSD-240GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 240 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "2.5''" .
 
 :ASSASSINS-CREED-REVALATIONS
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:MWE_BRONZE_550W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:MWE_BRONZE_550W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 550 .
 
-:i3-6100-driver  rdf:type  :CPUDriver , owl:NamedIndividual .
+:i3-6100-driver  rdf:type  owl:NamedIndividual , :CPUDriver .
 
-:SCANNER-XL-626A  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
+:SCANNER-XL-626A  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
 
 :COOLER-MASTER-MASTERBOX-NR200P
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseCompatibleWithMotherboard>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseType>
                 "Mini Tower" .
 
 :ARMAGGEDDON-VOLTRON-BRONZE-235FX
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 242 .
 
-:GTX-3080  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GTX-3080  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.71"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS ;
+                :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 8704 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -530,39 +540,42 @@
                 10 .
 
 :machinist_x99_dual_cpu
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:intel_i7-12700  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+:intel_i7-12700  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :inland_qn322_500gb_gen3 , :inland_qn322_2tb_gen3 , :inland_qn322_1tb_gen3 .
+                :inland_qn322_1tb_gen3 , :inland_qn322_2tb_gen3 , :inland_qn322_500gb_gen3 .
 
-:i7-8700k  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i7-8700k  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.7"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 12 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 12 .
 
-:GIGABYTE-Z690  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+:GIGABYTE-Z690  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:SONIC-GEAR-SPACE-5  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
+:SONIC-GEAR-SPACE-5  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
 
-:Patriot-DDR3-8GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:msi_pro_b550m_p_gen3
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:Patriot-DDR3-8GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 3 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 8 .
 
-:GeForce-RTX3080  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GeForce-RTX3080  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.65"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 7659 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -570,29 +583,32 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 10 .
 
-:PRINTER-HP-107A  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-HP-107A  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
-:LINUX-ASIANUX  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:LINUX-ASIANUX  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
 :CALL-OF-DUTY-MODERN-WARFARE
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:CALL-OF-DUTY1  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:CALL-OF-DUTY1  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:i5-10600-driver  rdf:type  :CPUDriver , owl:NamedIndividual .
+:i5-10600-driver  rdf:type  owl:NamedIndividual , :CPUDriver .
 
-:Corsair-K1  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> , owl:NamedIndividual ;
+:Corsair-K1  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseCompatibleWithMotherboard>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseType>
                 "SSF" .
 
+:asus_prime_b450m_a_ii
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
 :GeForce-RTX-3080-MASTER
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.71"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 8704 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -600,11 +616,11 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 10 .
 
-:GTX-1060  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GTX-1060  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.506"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 1280 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -612,13 +628,13 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 6 .
 
-:GTA3   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:GTA3   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:UNIX   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:UNIX   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
-:CORSAIR-SSD-960GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+:CORSAIR-SSD-960GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 960 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
@@ -637,18 +653,18 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 4 .
 
-:LOGITECH-POPKEYS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Microphone> , owl:NamedIndividual .
+:LOGITECH-POPKEYS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Microphone> .
 
 :msi_b550_gaming_gen3
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:ASSASSINS-CREED2  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:ASSASSINS-CREED2  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:GeForce-GT-1030  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:GeForce-GT-1030  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.468"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS ;
+                :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 384 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -656,20 +672,20 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 2 .
 
-:GNOME-PLAYER  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> , owl:NamedIndividual .
+:GNOME-PLAYER  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> .
 
-:DELL-P2423  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:DELL-P2423  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 24 .
 
-:LINUX-FERMI  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:LINUX-FERMI  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
-:ASSASSINS-CREED  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:ASSASSINS-CREED  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :asus_tuf_gaming_b450-plus
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :nVidia-GeForce-GTX-1050Ti
         rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
@@ -682,133 +698,143 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 4 .
 
-:LINUX-CLEAROS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:LINUX-CLEAROS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
-:XG750-750W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:XG750-750W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 750 .
 
-:AGE-OF-EMPIRES  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:AGE-OF-EMPIRES  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:CRUCIAL-SSD-2TB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+:CRUCIAL-SSD-2TB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 2000 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "SATA" .
 
-:i7-6700k  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:x99_lga2011_3_ddr4_computer
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:i7-6700k  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "4.0"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 8 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 8 .
 
-:LOGITECH-K400  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> , owl:NamedIndividual .
+:LOGITECH-K400  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> .
 
-:ARCTIC-Freezer-A35  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+:ARCTIC-Freezer-A35  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Air" .
 
-:NZXT-Kraken-Z53  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+:intel_core_i5_7500t  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
+                :biostar_motherboard_tb250_btc_core , :biostar_motherboard_tb250_btc_pro , :biostar_198118_motherboard_tb250_btc , :biostar_tb360_btc_pro_core , :tb360_btc_pro_2_0_core , :supermicro_motherboard_mbd_x11scv_q_o_core , :yuhean_motherboard_lga_1151 , :machinist_x99_dual_cpu , :machinist_x99_computer_motherboards , :supermicro_motherboard_mbd_x11scm_f_b_core , :x99_lga2011_3_ddr4_computer .
+
+:NZXT-Kraken-Z53  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Liquid" .
 
-:tb360-btc_pro_2.0_core
+:msi_meg_b550_unify_x
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:tb360-btc_pro_2.0_core
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :gigabyte_x570_aorus_elite
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:CALL-OF-DUTY4  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
-:supermicro_motherboard_mbd-x11scv-q-o_core
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:CALL-OF-DUTY4  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :COOLER-MASTER-MASTERBOX-K501L
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseCompatibleWithMotherboard>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseType>
                 "Mid Tower" .
 
-:GTX-1080-driver  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> , owl:NamedIndividual .
+:supermicro_motherboard_mbd-x11scv-q-o_core
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:ASUS-TUF-B660-PLUS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+:GTX-1080-driver  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> .
 
-:DELL-E2723HN  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:ASUS-TUF-B660-PLUS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:DELL-E2723HN  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 27 .
 
 :SAMSUNG-SSD-970-EVO-PLUS-1TB
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 1000 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
 :PRINTER-EPSONL1210-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> .
 
-:i3-12100  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i3-12100  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.3"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 12 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 8 .
 
-:BS-PLAYER  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> , owl:NamedIndividual .
+:BS-PLAYER  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoPlayer> .
 
-:Serial-ATA-3-500GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:Serial-ATA-3-500GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 500 .
 
 :CHIEFTEC-GPE-500S-500W
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 500 .
 
-:SEAGATE-6TB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:SEAGATE-6TB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 6000 .
 
-:LINUX-ROCKY  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:LINUX-ROCKY  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
 :WD-Blue-SN550-SSD-500GB
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 500 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
-:COOLER-MASTER-C2  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+:COOLER-MASTER-C2  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCooler>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Liquid" .
 
@@ -817,183 +843,202 @@
         rdfs:domain  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         rdfs:range   <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:i7-8700  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:asus_tuf_gaming_b450_plus
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:i7-8700  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.2"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 12 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 12 .
 
-:gigabyte_x570_ud_amd
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
 :FSP-HEXA-85-PRO-650W
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 650 .
 
-:DELL-AW2521  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:gigabyte_x570_ud_amd
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:tb360_btc_pro_2_0_core
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+
+:DELL-AW2521  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 25 .
 
 :CPUDriver  rdf:type     owl:Class ;
         rdfs:subClassOf  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Driver> .
 
-:inland_prime_1tb_tlc
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:WINDOWS10  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
 
-:WINDOWS10  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
+:inland_prime_1tb_tlc
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:biostar_tb360_btc_pro_core
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
 :yuhean_motherboard_lga_1151
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :biostar_motherboard_tb250-btc_core
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:GTA1   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:GTA1   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :intel_core_i5-6500  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
                 :yuhean_motherboard_lga_1151 , :tb360-btc_pro_2.0_core , :biostar_motherboard_tb250-btc_core , :x99_lga2011-3_ddr4_computer , :biostar_tb360-btc_pro_core , :machinist_x99_dual_cpu , :biostar_198118_motherboard_tb250-btc , :machinist_x99_computer_motherboards , :biostar_motherboard_tb250-btc_pro , :supermicro_motherboard_mbd-x11scv-q-o_core , :supermicro_motherboard_mbd-x11scm-f-b_core .
 
-:DELL-U2723QE  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
+:DELL-U2723QE  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
                 27 .
 
-:gigabyte_b550_aorus_elite
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:inland_qn322_500gb_gen3
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:WD-GOLD-14TB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
-                14000 .
-
-:TRUST-GXT-628  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
-
-:LINUX-RED-HAT  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
-
-:DELL-S2422HG  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
-                24 .
-
-:LOGITECH-M330  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
-
-:SCANNER-WORKFORCE-ES
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
-
-:GTX-950  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
-                768 ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
-                "13.65"^^xsd:double , "1.026"^^xsd:double ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
-                2 .
-
-:LOGITECH-POPKEYS-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#KeyboardDriver> , owl:NamedIndividual .
-
-:PRINTER-HP107W-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> , owl:NamedIndividual .
-
-:Ryzen7-3800X  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Ryzen7-3800X  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.9"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 32 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 16 .
 
-:GIGABYTE-X570S  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual ;
+:LOGITECH-POPKEYS-driver
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#KeyboardDriver> .
+
+:SCANNER-WORKFORCE-ES
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
+
+:LOGITECH-M330  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
+
+:LINUX-RED-HAT  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
+
+:DELL-S2422HG  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
+                24 .
+
+:WD-GOLD-14TB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
+                14000 .
+
+:TRUST-GXT-628  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
+
+:inland_qn322_500gb_gen3
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:gigabyte_b550_aorus_elite
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:PRINTER-HP107W-driver
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> .
+
+:GTX-950  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
+                768 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
+                "1.026"^^xsd:double , "13.65"^^xsd:double ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
+                2 .
+
+:GIGABYTE-X570S  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
                 :ASUS-PRIME-B560-PLUS .
 
 :SCANNER-EPSONV19-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
 
-:RAPOO-M305  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
+:RAPOO-M305  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
 
-:Kingston-DDR4-8GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Kingston-DDR4-8GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 4 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS ;
+                :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 8 .
 
-:biostar_tb360-btc_pro_core
+:supermicro_motherboard_mbd_x11scv_q_o_core
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:WINDOWS7  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> , owl:NamedIndividual .
-
 :CRUCIAL-SSD-P5-Plus-500GB
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 500 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
-:8gb_ddr4_ram  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :gigabyte_x570_aorus_master , :msi_b550_gaming_gen3 , :msi_pro_b550m-p_gen3 , :gigabyte_x570_aorus_xtreme , :msi_meg_b550_unify-x , :inland_qn322_500gb_gen3 , :inland_performance_1tb_nvme , :msi_mpg_b550_gaming , :gigabyte_x570_gaming_x , :gigabyte_b550_aorus_elite , :inland_prime_1tb_tlc , :msi_mag_b550m_mortar , :msi_mag_b550_tomahawk , :msi_meg_b550_unify , :asus_prime_b450m-a_ii , :gigabyte_x570_ud_amd , :asus_tuf_b450-pro_gaming , :asus_tuf_gaming_b450-plus , :gigabyte_x570_aorus_elite .
+:biostar_tb360-btc_pro_core
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:WINDOWS7  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#WindowsOS> .
+
+:LINUX-ORACLE  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
 :8gb_ddr4  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :biostar_tb360-btc_pro_core , :machinist_x99_dual_cpu , :supermicro_motherboard_mbd-x11scm-f-b_core , :biostar_198118_motherboard_tb250-btc , :supermicro_motherboard_mbd-x11scv-q-o_core , :biostar_motherboard_tb250-btc_core , :tb360-btc_pro_2.0_core , :yuhean_motherboard_lga_1151 , :x99_lga2011-3_ddr4_computer , :machinist_x99_computer_motherboards , :biostar_motherboard_tb250-btc_pro .
+                :biostar_motherboard_tb250_btc_core , :supermicro_motherboard_mbd_x11scv_q_o_core , :biostar_tb360-btc_pro_core , :machinist_x99_dual_cpu , :biostar_motherboard_tb250_btc_pro , :supermicro_motherboard_mbd-x11scm-f-b_core , :biostar_198118_motherboard_tb250-btc , :supermicro_motherboard_mbd_x11scm_f_b_core , :supermicro_motherboard_mbd-x11scv-q-o_core , :biostar_198118_motherboard_tb250_btc , :biostar_motherboard_tb250-btc_core , :tb360-btc_pro_2.0_core , :x99_lga2011_3_ddr4_computer , :yuhean_motherboard_lga_1151 , :x99_lga2011-3_ddr4_computer , :biostar_tb360_btc_pro_core , :machinist_x99_computer_motherboards , :biostar_motherboard_tb250-btc_pro , :tb360_btc_pro_2_0_core .
 
-:LINUX-ORACLE  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
-
-:msi_mpg_b550_gaming  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:8gb_ddr4_ram  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
+                :gigabyte_x570_aorus_master , :msi_pro_b550m_p_gen3 , :msi_b550_gaming_gen3 , :msi_pro_b550m-p_gen3 , :gigabyte_x570_aorus_xtreme , :msi_meg_b550_unify-x , :inland_performance_1tb_nvme , :inland_qn322_500gb_gen3 , :msi_mpg_b550_gaming , :gigabyte_x570_gaming_x , :gigabyte_b550_aorus_elite , :msi_meg_b550_unify_x , :inland_prime_1tb_tlc , :asus_prime_b450m_a_ii , :asus_tuf_b450_pro_gaming , :msi_mag_b550m_mortar , :msi_mag_b550_tomahawk , :asus_prime_b450m-a_ii , :msi_meg_b550_unify , :gigabyte_x570_ud_amd , :asus_tuf_gaming_b450_plus , :asus_tuf_b450-pro_gaming , :asus_tuf_gaming_b450-plus , :gigabyte_x570_aorus_elite .
 
 :LOGITECH-MASTER-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MouseDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#MouseDriver> .
+
+:msi_mpg_b550_gaming  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :PRINTER-CANON-MG2550S-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> .
 
-:i9-12900KF  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i9-12900KF  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.2"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 30 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 24 .
 
-:ASUS-TUF-B560M-PLUS  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+:ASUS-TUF-B560M-PLUS  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:GTX-1660Ti-driver  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> , owl:NamedIndividual .
+:intel_i7_12700  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
+                :inland_qn322_500gb_gen3 , :inland_qn322_2tb_gen3 , :inland_qn322_1tb_gen3 .
 
-:LINUX-ALMA  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:biostar_198118_motherboard_tb250_btc
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:PRINTER-HP107W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-HP107W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
-:GTX-1660Ti  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+:LINUX-ALMA  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
+
+:GTX-1660Ti-driver  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> .
+
+:GTX-1660Ti  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "1.5"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 1536 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -1001,232 +1046,237 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 6 .
 
-:inland_qn322_2tb_gen3
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:PRINTER-EPSONL1210  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
+
+:SAMSON-Resolv-SE6  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> .
 
 :biostar_198118_motherboard_tb250-btc
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:SAMSON-Resolv-SE6  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Speakers> , owl:NamedIndividual .
-
-:SCANNER-DS-870  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
         rdfs:range  xsd:double .
 
-:RAPOO-M200  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
+:inland_qn322_2tb_gen3
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
-:PRINTER-EPSONL1210  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:SCANNER-DS-870  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
 
-:CALL-OF-DUTY2  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:RAPOO-M200  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
 
-:LOGITECH-K-220  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> , owl:NamedIndividual .
+:CALL-OF-DUTY2  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
-:Corsair-K2  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseCompatibleWithMotherboard>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseType>
-                "Full Tower" .
-
-:RAPOO-M300  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> , owl:NamedIndividual .
-
-:Pentium-Gold-G6400  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Pentium-Gold-G6400  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "4.0"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 4 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 4 .
 
-:GTA4   rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
+:Corsair-K2  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Case> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseCompatibleWithMotherboard>
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#caseType>
+                "Full Tower" .
+
+:LOGITECH-K-220  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> .
+
+:RAPOO-M300  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Mouse> .
+
+:GTA4   rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :msi_mag_b550m_mortar
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:GIGABYTE-B660  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :COOLER-MASTER-MWE-850-GOLD-V2
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 850 .
 
-:GTX-1080Ti-driver  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> , owl:NamedIndividual .
+:GIGABYTE-B660  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:Ryzen5-5600  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:GTX-1080Ti-driver  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoDriver> .
+
+:Ryzen5-5600  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.5"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 32 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 12 .
 
-:PRINTER-HP-M203DN  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+:PRINTER-HP-M203DN  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
+
+:supermicro_motherboard_mbd-x11scm-f-b_core
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :intel_core_i5_9400f  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :biostar_motherboard_tb250-btc_pro , :biostar_198118_motherboard_tb250-btc , :x99_lga2011-3_ddr4_computer , :machinist_x99_computer_motherboards , :tb360-btc_pro_2.0_core , :machinist_x99_dual_cpu .
+                :machinist_x99_computer_motherboards , :x99_lga2011_3_ddr4_computer , :biostar_198118_motherboard_tb250-btc , :machinist_x99_dual_cpu , :biostar_motherboard_tb250-btc_pro , :biostar_198118_motherboard_tb250_btc , :biostar_motherboard_tb250_btc_pro , :x99_lga2011-3_ddr4_computer , :tb360_btc_pro_2_0_core , :tb360-btc_pro_2.0_core .
 
-:supermicro_motherboard_mbd-x11scm-f-b_core
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:i5-10600  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:i5-10600  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.3"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 12 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 12 .
 
-:asus_prime_b450m-a_ii
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
+:ASSASSINS-CREED3  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
 
 :SCANNER-DS-870-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ScannerDriver> .
+
+:asus_prime_b450m-a_ii
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
 
 :MIS-MEG-CORELIQUID-S360
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CoolingSystem> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coolerType>
                 "Liquid" .
 
-:ASSASSINS-CREED3  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
 :SCANNER-WORKFORCE-DS410
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
 
-:REDRAGON-K535  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> , owl:NamedIndividual .
+:REDRAGON-K535  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> .
 
-:NEED-FOR-SPEED-UNDERGROUND
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> , owl:NamedIndividual .
-
-:Corsair-DDR4-16GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Corsair-DDR4-16GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 4 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 16 .
 
+:NEED-FOR-SPEED-UNDERGROUND
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#VideoGame> .
+
 :SCANNER-EPSON-DS-770II
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
 
 :FSP-HYDRO-PTM-PRO-1000W
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 1000 .
 
 :PRINTER-KYOCERA-PRI01531
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Printer> .
 
 :gigabyte_x570_aorus_xtreme
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:asus_tuf_b450_pro_gaming
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:Corsair-DDR4-8GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Corsair-DDR4-8GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 4 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :ASUS-TUF-Z590-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-TUF-B660-PLUS , :ASUS-TUF-Z590-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 8 .
 
-:RAMPAGE-KB-R90  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> , owl:NamedIndividual .
+:RAMPAGE-KB-R90  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Keyboard> .
 
 :SILICON-POWER-SSD-256GB
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#SSD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleSSD>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 256 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ssdType>
                 "M.2" .
 
-:Kingston-DDR3-4GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Kingston-DDR3-4GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 3 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 4 .
 
-:Ryzen9-5900  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> , owl:NamedIndividual ;
+:Ryzen9-5900  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#baseClock>
                 "3.4"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#cpuCacheMemory>
                 32 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#threadNumber>
                 16 .
 
 :COOLER-MASTER-MWE-750-BRONZE-V2
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 750 .
 
-:KALI-LINUX  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> , owl:NamedIndividual .
+:KALI-LINUX  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#LinuxOS> .
 
-:asus_tuf_b450-pro_gaming
-        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
-
-:SCANNER-EPSONV19  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> , owl:NamedIndividual .
-
-:Patriot-DDR4-32GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> , owl:NamedIndividual ;
+:Patriot-DDR4-32GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#RAM> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#DDRClass>
                 4 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleRAM>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 32 .
 
-:Serial-ATA-500GB  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> , owl:NamedIndividual ;
+:asus_tuf_b450-pro_gaming
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:SCANNER-EPSONV19  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Scanner> .
+
+:Serial-ATA-500GB  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#HDD> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleHDD>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 500 .
 
+:amd_6_core_ryzen_5_5500u
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#CPU> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleCPU>
+                :msi_mpg_b550_gaming , :inland_performance_1tb_nvme , :msi_b550_gaming_gen3 , :gigabyte_x570_aorus_xtreme , :gigabyte_b550_aorus_elite , :msi_meg_b550_unify_x , :asus_tuf_gaming_b450_plus , :msi_meg_b550_unify , :inland_qn322_500gb_gen3 , :inland_prime_1tb_tlc , :asus_prime_b450m_a_ii , :msi_mag_b550m_mortar , :msi_mag_b550_tomahawk , :gigabyte_x570_ud_amd , :msi_pro_b550m_p_gen3 .
+
 :PRINTER-HP-107A-driver
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> , owl:NamedIndividual .
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PrinterDriver> .
 
 <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
         rdfs:range  xsd:integer .
 
-:i3-12100-driver  rdf:type  :CPUDriver , owl:NamedIndividual .
+:i3-12100-driver  rdf:type  owl:NamedIndividual , :CPUDriver .
 
 :SEASONIC-PRIME-1300-GOLD
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-X570S , :GIGABYTE-B660 , :ASUS-TUF-Z590-PLUS ;
+                :ASUS-TUF-Z590-PLUS , :GIGABYTE-B660 , :GIGABYTE-X570S , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 1300 .
 
 :inland_qn322_1tb_gen3
+        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> , owl:NamedIndividual .
+
+:biostar_motherboard_tb250_btc_pro
         rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Motherboard> .
 
-:DELL-SE2422H  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> , owl:NamedIndividual ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
-                :ASUS-TUF-B660-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
-        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
-                24 .
-
 :AMD-Radeon-RX-6700-XT
-        rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> , owl:NamedIndividual ;
+        rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#GraphicsCard> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#clockSpeed>
                 "2.581"^^xsd:double ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleGPU>
-                :ASUS-PRIME-Z690M-PLUS , :ASUS-PRIME-B560-PLUS ;
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#coreNumber>
                 2304 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#hashRate>
@@ -1234,8 +1284,14 @@
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#memorySize>
                 12 .
 
-:XG850-850W  rdf:type  <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> , owl:NamedIndividual ;
+:DELL-SE2422H  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#Monitor> ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatibleMonitor>
+                :ASUS-PRIME-B560-PLUS , :ASUS-PRIME-Z690M-PLUS , :ASUS-TUF-B560M-PLUS , :ASUS-TUF-B660-PLUS ;
+        <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#diagonalInch>
+                24 .
+
+:XG850-850W  rdf:type  owl:NamedIndividual , <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#PowerSupply> ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#compatiblePowerSupply>
-                :GIGABYTE-Z690 , :GIGABYTE-B660 ;
+                :GIGABYTE-B660 , :GIGABYTE-Z690 ;
         <http://www.semanticweb.org/paracelsus/ontologies/2022/4/untitled-ontology-3#ratedPower>
                 850 .
